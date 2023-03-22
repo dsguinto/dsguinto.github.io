@@ -1,0 +1,93 @@
+/****** HEADER STYLING ******/
+.headerDiv form {
+  display: flex;
+}
+
+.headerDiv {
+  justify-content: space-between;
+}
+
+/****** BODY STYLING ******/
+
+.page {
+  padding: 3em 2em;
+}
+
+h2 {
+  text-align: center;
+}
+
+.searchOptions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.recipeOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  padding: 2em 0;
+}
+
+.recipeOption img {
+  border: 4px double grey;
+  margin-bottom: 0.75em;
+  width: 250px;
+  height: 250px;
+}
+
+.recipeLink {
+  color: grey;
+  border: none;
+  font-family: "Poiret One", cursive;
+  font-size: 1.25em;
+  font-weight: bold;
+  background-color: transparent;
+  text-decoration: underline;
+  transition: 200ms;
+}
+
+.recipeLink:hover {
+  color: #5bb100;
+  cursor: pointer;
+}
+
+.pageBtns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+.pageBtns__Btn {
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+  font-size: 1.5em;
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  color: #5bb100;
+  transition: 200ms;
+}
+
+.pageBtns__Btn:hover {
+  cursor: pointer;
+  color: #488b00;
+}
+
+/****** RESPONSIVE STYLING ******/
+@media all and (max-width: 608px) {
+  header {
+    padding: 1em;
+  }
+
+  .headerDiv {
+    justify-content: center;
+  }
+
+  .headerDiv form {
+    margin: 1em;
+  }
+}
