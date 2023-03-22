@@ -1,0 +1,123 @@
+/****** HEADER STYLING ******/
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #334a52;
+    color: white;
+    padding: 1.5em;
+    margin: 0;
+    width: 100%;
+}
+
+h1{
+    animation : none;
+    opacity: 1;
+}
+
+.homeLink{
+    color: white;
+    text-decoration: none;
+    transition: all ease-in-out 300ms;
+}
+
+.homeLink:hover{
+    color: lightgrey;
+}
+
+.homeLink::after {
+    content: "";
+    background-color: lightgrey;
+    display: block;
+    position: relative;
+    width: 0%;
+    height: 2px;
+    transition: all ease-in-out 300ms;
+}
+  
+.homeLink:hover::after {
+    content: "";
+    background-color: lightgrey;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 2px;
+}
+
+/****** BODY STYLING ******/
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.left, .right{
+    justify-content: space-evenly;
+    max-width: 45%;
+    padding: 5em 3em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.right{
+    background-color: #f1f1e6;
+}
+
+img{
+    width: 100%;
+    margin: 1em 0;
+    transition: box-shadow 0.5s;
+    border-radius: 5px;
+}
+
+img:hover {
+  box-shadow: -10px 10px 10px rgba(33, 33, 33, 0.6);
+}
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 3em;
+}
+
+.links a{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #334a52;
+    border: 1px solid #334a52;
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transition: 200ms;
+}
+
+.links a:hover{
+    color:#5f97b9;
+    background-color: #f8f8e8;
+    border-color: #5f97b9;
+}
+
+h3{
+    border-bottom: 1px solid black;
+}
+
+
+/****** FOOTER STYLING ******/
+footer{
+    padding: 1em;
+    background-color: #334a52;
+    color: white;
+    font-weight: 300
+}
+
+/****** MEDIA QUERIES ******/
+
+@media all and (max-width: 1000px) {
+    .left, .right{
+        max-width: 90%;
+        margin-bottom: 3em;
+  }
+}
