@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="../CSS/portfolio.css" rel="stylesheet" />
+    <link href="../CSS/workpage.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="IMAGES/favicon.ico" />
+    <script src="https://kit.fontawesome.com/2956115494.js" crossorigin="anonymous"></script>
+    <title>Daniel Guinto - Kitchen Beets</title>
+</head>
+<body>
+    <header>
+        <h1>Kitchen Beets</h1>
+        <p><a class="homeLink" href="/index.html">Back to Portfolio</a></p>
+    </header>
+    <div class="main">
+        <div class="left">
+            <img src="../IMAGES/KitchenBeets_Thumbnail.png">
+            <img src="../IMAGES/KitchenBeets_Search.png">
+            <img src="../IMAGES/KitchenBeets_Recipe.png">
+        </div>
+        <div class="right">
+            <div>
+                <h3>Overview</h3>
+                <p>
+                    Kitchen Beets is a PHP application that utilizes the <a class=textLink target="_blank" href="https://spoonacular.com/food-api/docs" style="text-decoration: underline;">Spoonacular API</a> and
+                    <a class=textLink target="_blank" href="https://developers.google.com/youtube/v3" style="text-decoration: underline;">Youtube Data API</a>.
+                </p>
+                <p>
+                    A user can use a search bar to look up a list recipes sourced from the Spoonacular API. 
+                    When a user selects a recipe they would like to make, a Lofi music video is grabbed
+                    from Youtube and presented on the recipe page to give the user music to listen to
+                    while cooking.              
+                </p>
+                <p>
+                    The length of the video (response: <i>duration</i>) will match or be within 
+                    +5 minutes of the maximum amount of time (response: <i>maxReadyTime</i>) the recipe is expected
+                    to take to make.
+                </p>
+                <p>
+                    <b>Skills Showcased:</b> API Integration, PHP, HTML, CSS</br>
+                </p>
+            </div>
+            <div>
+                <img src="../IMAGES/KitchenBeets.gif">
+            </div>
+            <div class="links">
+                <p><a href="https://github.com/dsguinto/Kitchen_Beets" target="_blank">Github</a></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p id="copyright"> © Copyright Daniel Guinto, 2020</p>
+      </footer>
+</body>
+</html>
