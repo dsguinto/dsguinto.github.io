@@ -526,8 +526,8 @@ nav {
 .workExamples__container h3 {
   position: absolute;
   width: 100%;
-  height: -webkit-fill-available;
   top: 0;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -544,7 +544,7 @@ nav {
 
 .workExamples__container img:hover {
   transition: 0.5s cubic-bezier(0.33, 1, 0.68, 1);
-  filter: brightness(0.5);
+  filter: brightness(0.65);
   cursor: pointer;
 }
 
